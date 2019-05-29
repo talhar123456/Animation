@@ -1,0 +1,82 @@
+.div
+{
+    width: 100%;
+    height: 300px;
+    background-color: grey;
+}
+
+.div_inner
+{
+    width: 30%;
+    height: 100%;
+    /* background-color: grey; */
+    position: relative;
+
+    animation: mymove 2s;
+    animation-iteration-count: 100000;
+}
+
+@keyframes mymove 
+{
+    from {left: 0%;}
+    to {left: 70%;}
+  }
+
+.div_red
+{
+    width: 50%;
+    height: 50%;
+    background-color: red;
+    float: left;
+    border-radius: 50%;
+    opacity: .8;
+    position: absolute;
+    top: 20%;
+    z-index: 4;
+}
+
+.div_blue
+{
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+    float: right;
+    border-radius: 50%;
+    opacity: .8;
+    
+    position: absolute;
+    left: 20%;
+    z-index: 1;
+}
+
+.div_yellow
+{
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    /* margin-top: 10px; */
+    float: left;
+    border-radius: 50%;
+    opacity: .8;
+    
+    position: absolute;
+    bottom: 30%;
+    left: 40%;
+    z-index: 2;
+}
+
+.div_green
+{
+    width: 50%;
+    height: 50%;
+    background-color: green;
+    /* margin-top: 0px; */
+    float: right;
+    border-radius: 50%;
+    opacity: .8;
+    
+    position: absolute;
+    left: 20%;
+    bottom: 5%;
+    z-index: 3;
+}
